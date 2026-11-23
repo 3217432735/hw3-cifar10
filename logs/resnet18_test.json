@@ -1,0 +1,347 @@
+{
+  "experiment": "resnet18",
+  "checkpoint": "logs\\resnet18_best.pt",
+  "split": "official test set (10000 images, final evaluation only)",
+  "test_samples": 10000,
+  "total_accuracy": 0.9444,
+  "total_error_rate": 0.05559999999999998,
+  "per_class_accuracy": {
+    "airplane": 0.957,
+    "automobile": 0.981,
+    "bird": 0.93,
+    "cat": 0.881,
+    "deer": 0.963,
+    "dog": 0.894,
+    "frog": 0.958,
+    "horse": 0.96,
+    "ship": 0.969,
+    "truck": 0.951
+  },
+  "macro_average_accuracy": 0.9443999999999999,
+  "confusion_matrix": [
+    [
+      957,
+      1,
+      8,
+      4,
+      3,
+      0,
+      3,
+      0,
+      20,
+      4
+    ],
+    [
+      1,
+      981,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      15
+    ],
+    [
+      7,
+      0,
+      930,
+      15,
+      20,
+      11,
+      9,
+      7,
+      1,
+      0
+    ],
+    [
+      4,
+      2,
+      13,
+      881,
+      21,
+      57,
+      9,
+      6,
+      2,
+      5
+    ],
+    [
+      0,
+      0,
+      11,
+      13,
+      963,
+      3,
+      2,
+      8,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      7,
+      65,
+      17,
+      894,
+      3,
+      9,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      15,
+      14,
+      7,
+      4,
+      958,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      3,
+      5,
+      16,
+      13,
+      1,
+      960,
+      0,
+      0
+    ],
+    [
+      13,
+      3,
+      5,
+      1,
+      1,
+      0,
+      0,
+      1,
+      969,
+      7
+    ],
+    [
+      8,
+      27,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      11,
+      951
+    ]
+  ],
+  "top_confusions": [
+    {
+      "true_class": "dog",
+      "predicted_class": "cat",
+      "count": 65
+    },
+    {
+      "true_class": "cat",
+      "predicted_class": "dog",
+      "count": 57
+    },
+    {
+      "true_class": "truck",
+      "predicted_class": "automobile",
+      "count": 27
+    },
+    {
+      "true_class": "cat",
+      "predicted_class": "deer",
+      "count": 21
+    },
+    {
+      "true_class": "airplane",
+      "predicted_class": "ship",
+      "count": 20
+    },
+    {
+      "true_class": "bird",
+      "predicted_class": "deer",
+      "count": 20
+    },
+    {
+      "true_class": "dog",
+      "predicted_class": "deer",
+      "count": 17
+    },
+    {
+      "true_class": "horse",
+      "predicted_class": "deer",
+      "count": 16
+    },
+    {
+      "true_class": "automobile",
+      "predicted_class": "truck",
+      "count": 15
+    },
+    {
+      "true_class": "bird",
+      "predicted_class": "cat",
+      "count": 15
+    },
+    {
+      "true_class": "frog",
+      "predicted_class": "bird",
+      "count": 15
+    },
+    {
+      "true_class": "frog",
+      "predicted_class": "cat",
+      "count": 14
+    },
+    {
+      "true_class": "cat",
+      "predicted_class": "bird",
+      "count": 13
+    },
+    {
+      "true_class": "deer",
+      "predicted_class": "cat",
+      "count": 13
+    },
+    {
+      "true_class": "horse",
+      "predicted_class": "dog",
+      "count": 13
+    }
+  ],
+  "misclassified_examples": [
+    {
+      "test_index": 1884,
+      "true_class": "horse",
+      "predicted_class": "dog",
+      "confidence": 0.9857717156410217
+    },
+    {
+      "test_index": 5609,
+      "true_class": "dog",
+      "predicted_class": "cat",
+      "confidence": 0.9840653538703918
+    },
+    {
+      "test_index": 59,
+      "true_class": "frog",
+      "predicted_class": "cat",
+      "confidence": 0.9839984178543091
+    },
+    {
+      "test_index": 275,
+      "true_class": "dog",
+      "predicted_class": "cat",
+      "confidence": 0.9808447360992432
+    },
+    {
+      "test_index": 8173,
+      "true_class": "dog",
+      "predicted_class": "cat",
+      "confidence": 0.9803885221481323
+    },
+    {
+      "test_index": 7408,
+      "true_class": "deer",
+      "predicted_class": "cat",
+      "confidence": 0.9780067205429077
+    },
+    {
+      "test_index": 8803,
+      "true_class": "cat",
+      "predicted_class": "dog",
+      "confidence": 0.97712641954422
+    },
+    {
+      "test_index": 8172,
+      "true_class": "dog",
+      "predicted_class": "cat",
+      "confidence": 0.9743216037750244
+    },
+    {
+      "test_index": 1685,
+      "true_class": "ship",
+      "predicted_class": "bird",
+      "confidence": 0.9739207029342651
+    },
+    {
+      "test_index": 5426,
+      "true_class": "dog",
+      "predicted_class": "cat",
+      "confidence": 0.9727546572685242
+    },
+    {
+      "test_index": 9300,
+      "true_class": "dog",
+      "predicted_class": "cat",
+      "confidence": 0.9725763201713562
+    },
+    {
+      "test_index": 4965,
+      "true_class": "cat",
+      "predicted_class": "deer",
+      "confidence": 0.9701873064041138
+    },
+    {
+      "test_index": 1969,
+      "true_class": "automobile",
+      "predicted_class": "truck",
+      "confidence": 0.9701350927352905
+    },
+    {
+      "test_index": 6646,
+      "true_class": "dog",
+      "predicted_class": "cat",
+      "confidence": 0.9700635671615601
+    },
+    {
+      "test_index": 162,
+      "true_class": "frog",
+      "predicted_class": "dog",
+      "confidence": 0.9686919450759888
+    },
+    {
+      "test_index": 4309,
+      "true_class": "horse",
+      "predicted_class": "deer",
+      "confidence": 0.9675014615058899
+    },
+    {
+      "test_index": 3799,
+      "true_class": "cat",
+      "predicted_class": "dog",
+      "confidence": 0.9666937589645386
+    },
+    {
+      "test_index": 422,
+      "true_class": "airplane",
+      "predicted_class": "ship",
+      "confidence": 0.9656586647033691
+    },
+    {
+      "test_index": 3192,
+      "true_class": "dog",
+      "predicted_class": "deer",
+      "confidence": 0.965201735496521
+    },
+    {
+      "test_index": 2592,
+      "true_class": "bird",
+      "predicted_class": "deer",
+      "confidence": 0.9645504951477051
+    }
+  ],
+  "artifacts": {
+    "confusion_matrix": "results\\resnet18_confusion_matrix.png",
+    "per_class_accuracy": "results\\resnet18_per_class_accuracy.png",
+    "misclassified_examples": "results\\resnet18_misclassified.png"
+  }
+}

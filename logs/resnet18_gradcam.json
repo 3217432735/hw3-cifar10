@@ -1,0 +1,50 @@
+{
+  "experiment": "resnet18",
+  "checkpoint": "logs\\resnet18_best.pt",
+  "method": "Grad-CAM on the last convolutional layer",
+  "samples": [
+    {
+      "test_index": 5703,
+      "true_class": "airplane",
+      "predicted_class": "airplane",
+      "confidence": 0.9908949136734009,
+      "correct": true
+    },
+    {
+      "test_index": 7280,
+      "true_class": "automobile",
+      "predicted_class": "automobile",
+      "confidence": 0.987583339214325,
+      "correct": true
+    },
+    {
+      "test_index": 5490,
+      "true_class": "cat",
+      "predicted_class": "cat",
+      "confidence": 0.9962435960769653,
+      "correct": true
+    },
+    {
+      "test_index": 9815,
+      "true_class": "dog",
+      "predicted_class": "dog",
+      "confidence": 0.994479775428772,
+      "correct": true
+    },
+    {
+      "test_index": 3415,
+      "true_class": "horse",
+      "predicted_class": "horse",
+      "confidence": 0.9903295040130615,
+      "correct": true
+    },
+    {
+      "test_index": 508,
+      "true_class": "truck",
+      "predicted_class": "truck",
+      "confidence": 0.9906629323959351,
+      "correct": true
+    }
+  ],
+  "artifact": "results\\resnet18_gradcam.png"
+}
